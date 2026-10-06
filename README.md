@@ -1,24 +1,18 @@
 # pq 的个人网站
 
-简洁的中文个人主页，采用米白与自然绿配色，适配电脑与手机。
+## 文件结构
 
-## 文件
+- index.html：网页内容与结构。
+- style.css：颜色、排版和手机适配样式。
+- script.js：作品详情和联系弹窗交互。
+- .nojekyll：GitHub Pages 可选配置文件，Mac 默认隐藏。
 
-- `index.html`：完整网站，已包含样式、插画和交互代码，无需安装依赖或构建。
-- `.nojekyll`：用于 GitHub Pages 静态托管。
+## 使用
 
-## 上传到 GitHub
+将压缩包解压，保持 index.html、style.css 和 script.js 在同一个文件夹中，双击 index.html 即可打开网站。修改页面文字请编辑 index.html，修改外观请编辑 style.css，修改交互请编辑 script.js。
 
-1. 解压文件包。
-2. 新建或打开你的 GitHub 仓库。
-3. 将文件夹内的 `index.html`、`.nojekyll` 和 `README.md` 上传到仓库根目录。不要只上传 ZIP 文件，也不要将首页放在额外的子文件夹内。
-4. 如需上线网站，在仓库的 Settings → Pages 中选择从分支部署（Deploy from a branch），选中存放这些文件的分支和根目录 `/ (root)`，然后保存。
-5. 发布完成后，在 Pages 页面查看网站访问地址。GitHub Pages 的可用性取决于仓库可见性与账户方案。
+## 上传 GitHub
 
-## 修改内容
+将本文件夹内的文件上传到仓库根目录，不要只上传 ZIP。HTML、CSS、JS 三个文件都需要上传，并保持相对位置不变。需要在线访问时，在仓库 Settings → Pages 中配置发布分支及根目录。
 
-用文本编辑器编辑 `index.html` 即可修改文字和配色。个人姓名为 pq；目前作品为示例，个人介绍及联系方式仍需补充。联系按钮目前显示待填写提示，填入真实联系方式后可改为邮箱或社交主页链接。
-
-## 本地打开
-
-双击 `index.html` 即可预览。
+作品为展示示例，个人介绍与联系方式待补充。
