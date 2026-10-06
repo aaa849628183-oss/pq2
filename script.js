@@ -1,15 +1,1 @@
-document.addEventListener('DOMContentLoaded', () => {
-  // 设置页脚当前年份
-  const yearElement = document.getElementById('year');
-  if (yearElement) {
-    yearElement.textContent = new Date().getFullYear();
-  }
-
-  // 明暗主题切换
-  const themeToggle = document.getElementById('themeToggle');
-  themeToggle?.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', newTheme);
-  });
-});
+const dialog=document.querySelector('#detail');function show(label,title,copy){document.querySelector('#dialog-label').textContent=label;document.querySelector('#dialog-title').textContent=title;document.querySelector('#dialog-copy').textContent=copy;dialog.showModal()}const projects=[['留白的艺术','这是一张原创排版示意，以纸张、圆形和自然色彩探索简洁的视觉表达。这里可替换成你的真实项目，介绍创作背景、过程与成果。'],['日常的另一面','这是一幅用几何色块呈现风景的示意作品。这里可放入你的摄影、文章或生活记录，让访客了解你观察世界的方式。']];document.querySelectorAll('[data-project]').forEach(b=>b.addEventListener('click',()=>{let p=projects[Number(b.dataset.project)];show('作品展示示例',...p)}));document.querySelector('#contact-button').addEventListener('click',()=>show('SAY HELLO','期待与你联系','联系方式尚未填写。提供你的邮箱或社交主页后，这里就能成为访客联系你的入口。'));document.querySelector('.close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close()}});
